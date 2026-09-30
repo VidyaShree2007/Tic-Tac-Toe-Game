@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic-Tac-Toe Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- LEFT SIDE -->
+        <div class="side-panel left-panel">
+
+            <h2>🎮 How to Play</h2>
+
+            <div class="rule">
+                <span>1</span>
+                <p>Player X goes first.</p>
+            </div>
+
+            <div class="rule">
+                <span>2</span>
+                <p>Click on any empty box.</p>
+            </div>
+
+            <div class="rule">
+                <span>3</span>
+                <p>Players take turns.</p>
+            </div>
+
+            <div class="rule">
+                <span>4</span>
+                <p>Get 3 symbols in a row.</p>
+            </div>
+
+            <div class="rule">
+                <span>5</span>
+                <p>Three in a row can be horizontal, vertical or diagonal.</p>
+            </div>
+
+            <div class="rule">
+                <span>6</span>
+                <p>If all boxes are filled, it is a draw.</p>
+            </div>
+
+        </div>
+
+
+        <!-- CENTER GAME -->
+        <div class="game-container">
+
+            <h1>❌ Tic-Tac-Toe ⭕</h1>
+
+            <p class="subtitle">Let's play!</p>
+
+
+            <!-- Scoreboard -->
+            <div class="scoreboard">
+
+                <div class="player-card player-x">
+                    <span>Player X</span>
+                    <strong id="scoreX">0</strong>
+                </div>
+
+                <div class="player-card player-o">
+                    <span>Player O</span>
+                    <strong id="scoreO">0</strong>
+                </div>
+
+            </div>
+
+
+            <!-- Status -->
+            <div id="status">
+                Player X's Turn
+            </div>
+
+
+            <!-- Game Board -->
+            <div class="board">
+
+                <button class="cell" data-index="0"></button>
+                <button class="cell" data-index="1"></button>
+                <button class="cell" data-index="2"></button>
+
+                <button class="cell" data-index="3"></button>
+                <button class="cell" data-index="4"></button>
+                <button class="cell" data-index="5"></button>
+
+                <button class="cell" data-index="6"></button>
+                <button class="cell" data-index="7"></button>
+                <button class="cell" data-index="8"></button>
+
+            </div>
+
+
+            <!-- Restart -->
+            <button id="restartBtn">
+                🔄 Play Again
+            </button>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="side-panel right-panel">
+
+            <h2>💡 Game Tips</h2>
+
+            <div class="tip">
+                <span>🎯</span>
+                <div>
+                    <h3>Take the Center</h3>
+                    <p>The center gives you more winning possibilities.</p>
+                </div>
+            </div>
+
+            <div class="tip">
+                <span>🛡️</span>
+                <div>
+                    <h3>Block Your Opponent</h3>
+                    <p>Stop your opponent when they have two symbols in a row.</p>
+                </div>
+            </div>
+
+            <div class="tip">
+                <span>👀</span>
+                <div>
+                    <h3>Watch Carefully</h3>
+                    <p>Look at the board before making every move.</p>
+                </div>
+            </div>
+
+            <div class="tip">
+                <span>🧠</span>
+                <div>
+                    <h3>Think Ahead</h3>
+                    <p>Try to plan your next move before clicking.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
